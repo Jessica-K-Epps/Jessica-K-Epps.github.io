@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+$jke-primary-color: #e5c4c0;
+$jke-secondary-color: #323235;
+$jke-tertiary-color: #bcb6b3;
+
+.header .name-title h1,
+.header .name-title p {
+  text-align: center;
+}
+
+// .about,
+// .contact {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+.jke-primary-color {
+  background-color: var(jke-primary-color);
+}
+
+.jke-secondary-color {
+  background-color: var(jke-secondary-color);
+}
