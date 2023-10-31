@@ -1,6 +1,12 @@
+// Library Imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
+// PrimeNG Imports
+import { ButtonModule } from 'primeng/button';
+
+// App Imports
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
@@ -9,6 +15,8 @@ import { AboutMeComponent } from './views/landing-page/about-me/about-me.compone
 import { ServicesOfferedComponent } from './views/landing-page/services-offered/services-offered.component';
 import { ContactMeComponent } from './views/landing-page/contact-me/contact-me.component';
 import { PortfolioSummaryComponent } from './views/landing-page/portfolio-summary/portfolio-summary.component';
+import { AboutMeExpandedComponent } from './views/about-me-expanded/about-me-expanded.component';
+import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/skills-and-tools.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +26,12 @@ import { PortfolioSummaryComponent } from './views/landing-page/portfolio-summar
     AboutMeComponent,
     ServicesOfferedComponent,
     ContactMeComponent,
-    PortfolioSummaryComponent
+    PortfolioSummaryComponent,
+    AboutMeExpandedComponent,
+    SkillsAndToolsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, ButtonModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

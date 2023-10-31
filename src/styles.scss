@@ -1,13 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+//** COLORS
+
 $jke-primary-color: #e5c4c0;
 $jke-secondary-color: #323235;
 $jke-tertiary-color: #bcb6b3;
-
-// .about,
-// .contact {
-//   display: flex;
-//   justify-content: space-between;
-// }
 
 .jke-primary-color {
   background-color: var(jke-primary-color);
@@ -15,4 +10,62 @@ $jke-tertiary-color: #bcb6b3;
 
 .jke-secondary-color {
   background-color: var(jke-secondary-color);
+}
+
+//** FONTS
+
+@font-face {
+  font-family: "Adelia";
+  src: url("/assets/fonts/Adelia.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Verlag";
+  src: url("/assets/fonts/Verlag-Black.ttf") format("truetype");
+}
+
+//** GLOBAL STYLES
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Adelia", sans-serif;
+  font-size: 2rem;
+}
+
+body,
+p {
+  font-family: "Verlag", sans-serif;
+}
+
+body {
+  // No need for margin right now ...
+  margin: 0rem !important;
+}
+
+button {
+  // color: white;
+  width: 200px;
+  background-color: transparent;
+  border: none; // solid $jke-secondary-color !important  border-radius: 10px;
+  border-radius: 7px !important;
+  margin: 0.5rem;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+
+  padding: 15px 32px;
+  text-align: center;
+
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: $jke-primary-color !important;
+}
+
+button:active {
+  transform: scale(0.95);
 }

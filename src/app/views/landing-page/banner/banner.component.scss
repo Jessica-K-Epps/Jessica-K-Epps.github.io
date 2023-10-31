@@ -1,11 +1,20 @@
 // Import the global styles
 @import "src/styles.scss";
 
-// .banner .name-title h1,
-// .banner .name-title p {
-//   text-align: center;
-// }
+.name-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
-// .banner {
-//   background-color: $jke-primary-color;
-// }
+.name-title h1 {
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
