@@ -1,5 +1,17 @@
+// main#landing-page {
+//   display: flex;
+//   flex-direction: column; /* Makes the children stack vertically */
+//   align-items: center; /* Centers children horizontally */
+//   justify-content: center; /* Centers children vertically */
+// }
 main#landing-page {
-  background-color: #0000ff;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Makes the children stack vertically */
+  align-items: center; /* Centers children horizontally */
+  justify-content: center; /* Centers children vertically */
 }
+
+// .banner {
+//   display: flex;
+//   flex-direction: horizontal;
+// }
