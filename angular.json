@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Jessica-K-Epps.github.io": {
+    "jessicaKEppsgithubio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
