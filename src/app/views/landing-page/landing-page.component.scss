@@ -6,6 +6,8 @@ main#landing-page-main {
   grid-template-columns: 100%;
   // place-items: center;
   // background-color: aqua;
+  justify-items: center; /* Centers content horizontally in the grid */
+  align-items: center; /* Centers content vertically in the grid */
 }
 
 main#landing-page-main > * {
@@ -22,59 +24,49 @@ main#landing-page-main > * {
 // app-landing-page {
 // }
 
-app-banner {
+app-banner,
+app-about-me,
+app-skills-and-tools,
+app-services-offered,
+app-contact-me,
+app-portfolio-summary {
   display: flex;
   flex-direction: column;
-  align-items: center; // Align items vertically, centered
+  align-items: center; /* This should center the content vertically */
   align-content: center;
-  justify-content: center; // Align items horizontally, centered (with minimal space between)
+  justify-content: center; /* This should center the content horizontally */
   width: 100%;
+}
+
+app-banner {
   // height: 50vh;
   height: 600px !important;
 }
 
 app-about-me {
   background-color: $jke-primary-color;
-  display: flex;
-  align-items: center; // Align items vertically, centered
-  align-content: center;
-  justify-content: center; // Align items horizontally, centered (with minimal space between)
+  flex-direction: row !important;
   width: 100%;
 }
 
 app-skills-and-tools {
-  display: flex;
-  flex-direction: column;
-  align-items: center; // Align items vertically, centered
-  align-content: center;
-  justify-content: center; // Align items horizontally, centered (with minimal space between)
-  width: 100%;
+  height: auto !important;
+
+  // @media (max-width: 768px) {
+  //   height: 800px !important;
+  //   margin-top: 3rem;
+  // }
 }
 
 app-services-offered {
-  display: flex;
-  flex-direction: column;
-  align-items: center; // Align items vertically, centered
-  align-content: center;
-  justify-content: center; // Align items horizontally, centered (with minimal space between)
-  width: 100%;
 }
 
 app-contact-me {
-  display: flex;
-  align-items: center; // Align items vertically, centered
-  align-content: center;
-  justify-content: center; // Align items horizontally, centered (with minimal space between)
-  width: 100%;
+  flex-direction: row !important;
 
   background-color: $jke-tertiary-color;
 }
 
 app-portfolio-summary {
-  display: flex;
-  flex-direction: column;
-  align-items: center; // Align items vertically, centered
-  align-content: center;
-  justify-content: center; // Align items horizontally, centered (with minimal space between)
   width: 100%;
 }

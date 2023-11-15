@@ -1,0 +1,103 @@
+// div {
+//   opacity: 0.5;
+// }
+
+// .highlighted {
+//   opacity: 1;
+// }
+
+// .skill-cloud-ui {
+//   display: flex;
+//   // flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 1rem;
+// }
+
+// .cloud-ui {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 1rem;
+// }
+
+.skill-cloud-ui {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+  @media (max-width: 768px) {
+    margin-right: 2rem;
+    flex-direction: column;
+    button {
+      width: auto;
+    }
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+// .cloud-ui {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 1rem;
+
+//   @media (max-width: 768px) {
+//     flex-direction: row;
+//   }
+//   @media (min-width: 768px) {
+//     flex-direction: column;
+//   }
+// }
+.cloud-ui {
+  display: flex;
+  justify-content: center; // Center items horizontally
+  flex-wrap: wrap; // Allow items to wrap
+  align-items: center; // Center items vertically
+  margin: 1rem;
+
+  button {
+    @media (max-width: 768px) {
+      flex: 0 0 48%; // Each button takes up almost half the width of its container
+      margin: 1%; // Small margin for spacing between buttons
+    }
+  }
+}
+
+.skill-cloud {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  > div {
+    width: calc(100% / 2); // three columns
+
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+  }
+}
+
+div {
+  opacity: 0.5;
+}
+
+.highlighted {
+  opacity: 1;
+}

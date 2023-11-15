@@ -1,1 +1,21 @@
 <h1>Skills & Tools</h1>
+
+<div class="skill-cloud-ui">
+  <div class="cloud-ui">
+    <button
+      pButton
+      type="button"
+      *ngFor="let category of categories"
+      [label]="category"
+      (click)="toggleHighlightByCategory(category)"
+    ></button>
+  </div>
+  <div class="skill-cloud">
+    <div
+      *ngFor="let skill of skills"
+      [ngClass]="{ highlighted: skill.highlighted }"
+    >
+      {{ skill.name }}
+    </div>
+  </div>
+</div>

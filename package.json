@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "startOriginal": "ng serve",
+    "start": "ng serve jessicaKEppsgithubio",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "push": "ng build & git push"
+    "push": "ng build && git push"
   },
   "private": true,
   "dependencies": {

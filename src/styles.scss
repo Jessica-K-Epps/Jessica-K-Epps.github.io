@@ -1,8 +1,12 @@
 //** COLORS
 
-$jke-primary-color: #e5c4c0;
-$jke-secondary-color: #323235;
-$jke-tertiary-color: #bcb6b3;
+// $jke-primary-color: #e5c4c0;
+// $jke-secondary-color: #323235;
+// $jke-tertiary-color: #bcb6b3;
+$jke-primary-color: #d59ba7;
+$jke-secondary-color: #fffaf0;
+$jke-tertiary-color: #5c5c5c;
+$jke-quad-color: #1f1f1f;
 
 .jke-primary-color {
   background-color: var(jke-primary-color);
@@ -44,6 +48,7 @@ p {
 body {
   // No need for margin right now ...
   margin: 0rem !important;
+  // width: 100%;
 }
 
 button {
