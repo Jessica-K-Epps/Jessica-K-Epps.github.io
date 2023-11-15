@@ -1,15 +1,52 @@
+// @import "src/styles.scss";
+
+// .contact-info {
+//   margin-right: 1rem;
+// }
+
+// img#contact-pic {
+//   // max-height: 100%;
+//   max-height: 200px;
+//   height: auto;
+//   width: auto;
+//   margin-right: 1rem;
+//   // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+//   margin-left: 1rem;
+// }
+
 @import "src/styles.scss";
 
 .contact-info {
   margin-right: 1rem;
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
 
 img#contact-pic {
-  // max-height: 100%;
   max-height: 200px;
   height: auto;
   width: auto;
   margin-right: 1rem;
-  // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   margin-left: 1rem;
+  transition: opacity 0.3s ease;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    width: 400px; // Adjust this value as needed for the desired size
+    max-height: 350px; // Set a max-width to control the size
+
+    // Update for centering
+    // left: 50%;
+    // transform: translateX(-50%);
+    // top: 50%; // Vertically center
+    // transform: translateY(-50%) translateX(-50%); // Adjust for both horizontal and vertical centering
+  }
 }
