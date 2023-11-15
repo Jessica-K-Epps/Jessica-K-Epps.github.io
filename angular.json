@@ -58,10 +58,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "jessicaKEppsgithubio:build:production"
+              "browserTarget": "Jessica-K-Epps.github.io:build:production"
             },
             "development": {
-              "browserTarget": "jessicaKEppsgithubio:build:development"
+              "browserTarget": "Jessica-K-Epps.github.io:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +69,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "jessicaKEppsgithubio:build"
+            "browserTarget": "Jessica-K-Epps.github.io:build"
           }
         },
         "test": {
