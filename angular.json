@@ -61,7 +61,7 @@
               "browserTarget": "Jessica-K-Epps.github.io:build:production"
             },
             "development": {
-              "browserTarget": "Jessica-K-Epps.github.io:build:development"
+              "browserTarget": "jessicaKEppsgithubio:build:development"
             }
           },
           "defaultConfiguration": "development"
