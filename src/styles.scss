@@ -45,6 +45,8 @@ h6 {
 body,
 p {
   font-family: "Verlag", sans-serif;
+  // color: #F9F6F2;
+  color: #f7f4ec;
 }
 
 body {
@@ -69,9 +71,18 @@ button {
   transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: $jke-primary-color !important;
+a:hover,
+.navbar li:hover,
+button:hover,
+.hover-effect:hover,
+i:hover {
+  color: #d59ba7; /* Change text color on hover */
+  // font-size: 25px;
 }
+
+// button:hover {
+//   background-color: $jke-primary-color !important;
+// }
 
 button:active {
   transform: scale(0.95);

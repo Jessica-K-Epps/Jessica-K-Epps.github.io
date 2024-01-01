@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@angular/animations':
     specifier: ^16.2.11
@@ -32,12 +28,15 @@ dependencies:
   '@fortawesome/fontawesome-free':
     specifier: ^6.5.1
     version: 6.5.1
+<<<<<<< HEAD
   d3:
     specifier: ^7.8.5
     version: 7.8.5
   d3-cloud:
     specifier: ^1.2.7
     version: 1.2.7
+=======
+>>>>>>> 080e83915b40df41fba63e681dc323d90c8640e6
   primeflex:
     specifier: ^3.3.1
     version: 3.3.1
@@ -7903,3 +7902,7 @@ packages:
     resolution: {integrity: sha512-MKPbmZie6fASC/ps4dkmIhaT5eonHkEt6eAy80K42tAm0G2W+AahLJjbfi6X9NPdciOE9GRFTTM8u2IiF6O3ww==}
     dependencies:
       tslib: 2.6.2
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

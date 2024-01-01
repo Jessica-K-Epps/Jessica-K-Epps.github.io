@@ -20,6 +20,7 @@ import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/s
 import { WordCloudComponent } from './views/landing-page/skills-and-tools/word-cloud/word-cloud.component';
 import { CaseStudiesComponent } from './views/landing-page/case-studies/case-studies.component';
 import { CaseStudyComponent } from './views/landing-page/case-studies/case-study/case-study.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { CaseStudyComponent } from './views/landing-page/case-studies/case-study
     WordCloudComponent,
     CaseStudiesComponent,
     CaseStudyComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule],
   providers: [],

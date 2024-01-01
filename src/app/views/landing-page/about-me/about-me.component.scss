@@ -1,60 +1,7 @@
-// @import "src/styles.scss";
-
-// img#profile-pic {
-//   max-height: 350px;
-//   height: auto;
-//   width: auto;
-//   margin-right: 1rem;
-//   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-//   border-radius: 7px;
-//   transition: opacity 0.3s ease; // Smooth transition for opacity change
-
-//   @media (max-width: 768px) {
-//     position: absolute; // Position it absolutely within the relative container
-//     z-index: 0; // Place it behind the text
-//     opacity: 0.35; // Set the image to 35% translucency
-//     width: auto; // Stretch to full width of the container
-//     left: 50%;
-//     transform: translateX(-50%); // Center the image horizontally
-//   }
-// }
-
-// .description {
-//   max-width: 400px;
-//   margin-left: 1rem;
-//   position: relative; // Set position relative for layering
-//   z-index: 1; // Ensure text appears above the image
-
-//   @media (max-width: 768px) {
-//     margin-left: 0; // Adjust margin for mobile
-//     margin-right: 0; // Adjust margin for mobile
-//     text-align: center; // Center the text for mobile view
-//   }
-// }
-
-// .description h2 {
-//   font-size: 2rem;
-//   margin: 1rem;
-//   text-align: center;
-// }
-
-// .description p {
-//   margin: 1rem;
-// }
-
-// p {
-//   transition: color 0.3s, transform 0.3s;
-// }
-// p:hover {
-//   color: white;
-//   transform: translateY(1px) translateX(1px);
-//   cursor: pointer;
-// }
-
 @import "src/styles.scss";
 
 :host {
-  background-color: $jke-primary-color;
+  // background-color: $jke-primary-color;
   flex-direction: row !important;
 }
 
@@ -113,7 +60,7 @@ p {
 }
 
 p:hover {
-  color: white;
+  // color: white;
   transform: translateY(1px) translateX(1px);
   cursor: pointer;
 }
