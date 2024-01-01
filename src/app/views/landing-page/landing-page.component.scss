@@ -2,30 +2,19 @@
 
 main#landing-page-main {
   display: grid;
-  // gap: 1rem;
   grid-template-columns: 100%;
-  // place-items: center;
-  // background-color: aqua;
-  justify-items: center; /* Centers content horizontally in the grid */
-  align-items: center; /* Centers content vertically in the grid */
+  justify-items: center;
+  align-items: center;
 }
 
 main#landing-page-main > * {
-  height: 500px;
+  // height: 500px; // Needs to be content-specific
   width: 100%;
 }
 
-// @media (min-width: 40em) {
-//   .grid-even-columns {
-//     grid-template-columns: repeat(4, 1fr);
-//   }
-// }
-
-// app-landing-page {
-// }
-
 app-banner,
 app-about-me,
+app-case-studies,
 app-skills-and-tools,
 app-services-offered,
 app-contact-me,
@@ -36,41 +25,5 @@ app-portfolio-summary {
   align-content: center;
   justify-content: center; /* This should center the content horizontally */
   width: 100%;
-}
-
-app-banner {
-  // height: 50vh;
-  height: 600px !important;
-}
-
-app-about-me {
-  background-color: $jke-primary-color;
-  flex-direction: row !important;
-  width: 100%;
-  height: auto !important;
-}
-
-app-skills-and-tools {
-  height: auto !important;
-
-  // @media (max-width: 768px) {
-  //   height: 800px !important;
-  //   margin-top: 3rem;
-  // }
-}
-
-app-services-offered {
-}
-
-app-contact-me {
-  flex-direction: row !important;
-
-  background-color: $jke-tertiary-color;
-  @media (max-width: 768px) {
-    // height: 500px !important;
-  }
-}
-
-app-portfolio-summary {
-  width: 100%;
+  // height: auto !important;
 }

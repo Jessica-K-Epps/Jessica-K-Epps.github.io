@@ -1,6 +1,10 @@
 // Import the global styles
 @import "src/styles.scss";
 
+:host {
+  height: 600px !important;
+}
+
 .name-title {
   display: flex;
   flex-direction: column;
@@ -16,5 +20,23 @@
 
 .links {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
+  justify-content: center;
+}
+
+.links {
+  .fab {
+    font-size: 2rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: black;
+
+    &:hover {
+      color: $jke-primary-color;
+    }
+
+    &:active {
+      color: #555;
+    }
+  }
 }

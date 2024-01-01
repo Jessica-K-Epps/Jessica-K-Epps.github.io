@@ -17,6 +17,9 @@ import { ContactMeComponent } from './views/landing-page/contact-me/contact-me.c
 import { PortfolioSummaryComponent } from './views/landing-page/portfolio-summary/portfolio-summary.component';
 import { AboutMeExpandedComponent } from './views/about-me-expanded/about-me-expanded.component';
 import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/skills-and-tools.component';
+import { WordCloudComponent } from './views/landing-page/skills-and-tools/word-cloud/word-cloud.component';
+import { CaseStudiesComponent } from './views/landing-page/case-studies/case-studies.component';
+import { CaseStudyComponent } from './views/landing-page/case-studies/case-study/case-study.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/s
     PortfolioSummaryComponent,
     AboutMeExpandedComponent,
     SkillsAndToolsComponent,
+    WordCloudComponent,
+    CaseStudiesComponent,
+    CaseStudyComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule],
   providers: [],
