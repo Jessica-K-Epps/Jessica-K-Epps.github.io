@@ -1,3 +1,5 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
 //** COLORS
 
 // $jke-primary-color: #e5c4c0;
@@ -30,6 +32,9 @@ $jke-quad-color: #1f1f1f;
 
 //** GLOBAL STYLES
 
+
+
+
 h1,
 h2,
 h3,
@@ -43,6 +48,8 @@ h6 {
 body,
 p {
   font-family: "Verlag", sans-serif;
+  // color: #F9F6F2;
+  color: #F7F4EC;
 }
 
 body {
@@ -67,9 +74,14 @@ button {
   transition: transform 0.1s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: $jke-primary-color !important;
+a:hover, .navbar li:hover, button:hover, .hover-effect:hover, i:hover {
+  color: #D59BA7; /* Change text color on hover */
+  // font-size: 25px;
 }
+
+// button:hover {
+//   background-color: $jke-primary-color !important;
+// }
 
 button:active {
   transform: scale(0.95);

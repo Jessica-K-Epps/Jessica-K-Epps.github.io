@@ -17,6 +17,7 @@ import { ContactMeComponent } from './views/landing-page/contact-me/contact-me.c
 import { PortfolioSummaryComponent } from './views/landing-page/portfolio-summary/portfolio-summary.component';
 import { AboutMeExpandedComponent } from './views/about-me-expanded/about-me-expanded.component';
 import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/skills-and-tools.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/s
     PortfolioSummaryComponent,
     AboutMeExpandedComponent,
     SkillsAndToolsComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule],
   providers: [],
