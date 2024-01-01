@@ -16,5 +16,17 @@
 
 .links {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 }
+
+.icon-button {
+  font-size: 24px; /* Adjust size as needed */
+  cursor: pointer;
+  margin: 5px;
+  // color: #000; /* Or any color you prefer */
+  color: #F7F4EC; /* Or any color you prefer */
+}
+
+// .icon-button:hover {
+//   color: #555; /* Color on hover */
+// }
