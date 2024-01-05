@@ -1,6 +1,7 @@
 // Library Imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 // PrimeNG Imports
@@ -38,7 +39,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     CaseStudyComponent,
     NavbarComponent,
   ],
-  imports: [BrowserModule, ButtonModule, AppRoutingModule],
+  imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

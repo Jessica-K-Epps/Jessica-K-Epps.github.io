@@ -22,7 +22,7 @@ interface Skill {
 
 const categoryColors = {
   'Social Media': '#666666',
-  Marketing: '#999999',
+  'Marketing': '#999999',
   'Design Tools': '#CCCCCC',
   'Email Marketing': '#A8A8A8',
   'Analytics Tools': '#BBBBBB',

@@ -1,4 +1,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 //** COLORS
 
@@ -26,8 +28,24 @@ $jke-quad-color: #1f1f1f;
 }
 
 @font-face {
+  font-family: "Adelia 3";
+  src: url("/assets/fonts/from_jess/adelia_3/adelia.otf") format("truetype");
+}
+
+@font-face {
   font-family: "Verlag";
   src: url("/assets/fonts/Verlag-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Verlang Light"; // Name the font family
+  src: url("/assets/fonts/from_jess/Verlang/Verlang Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Verlag-Light";
+  src: url("/assets/fonts/Verlag-Light.ttf") format("truetype");
+  font-weight: 300; // Assuming 300 is the weight of the lighter font
 }
 
 //** GLOBAL STYLES
