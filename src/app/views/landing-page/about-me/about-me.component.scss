@@ -3,6 +3,7 @@
 :host {
   // background-color: $jke-primary-color;
   flex-direction: row !important;
+  margin: 6rem 0;
 }
 
 .content-row {
@@ -48,8 +49,24 @@ img#profile-pic {
 .description h2 {
   font-size: 2rem;
   margin: 1rem;
-  text-align: center;
+  margin-bottom: 2rem;
+  // text-align: center;
+  text-align: start;
+  min-width: 30rem;
+  
+  &.your {
+    margin: 1rem;
+    margin-bottom: 0rem;
+    text-align: start; 
+  }
+
+  &.advocate {
+    margin-top: 0rem;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+  }
 }
+
 
 .description p {
   margin: 1rem;
@@ -57,10 +74,13 @@ img#profile-pic {
 
 p {
   transition: color 0.3s, transform 0.3s;
+  background: none;
 }
 
 p:hover {
   // color: white;
-  transform: translateY(1px) translateX(1px);
+  transform: translateY(-1px) translateX(-1px);
   cursor: pointer;
+  color: $jke-primary-color;
+  background: none;
 }

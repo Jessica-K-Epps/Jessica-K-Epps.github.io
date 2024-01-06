@@ -1,75 +1,53 @@
 /* navbar.component.scss */
 :host {
   height: auto !important;
+  margin-bottom: 4rem;
 }
 
 .navbar {
-  position: absolute; /* Position navbar absolutely relative to its positioned ancestor */
-  top: 0; /* Align to the top of the ancestor */
-  right: 0; /* Align to the right of the ancestor */
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-  // height: auto !important;
-  width: auto; /* Adjust width as necessary */
-  // border-bottom: 2px solid #F7F4EC;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%; /* Take full width */
   font-family: "Verlag-Light", sans-serif;
   color: #F7F4EC;
   background-color: transparent;
   padding: 10px;
-  padding-left: 25rem;
-  z-index: 1000
-}
-
-.navbar-underline {
-  position: absolute;
-  bottom: 0;
-  left: 25%; /* Extend to the left */
-  right: 0;
-  height: 1px;
-  background: linear-gradient(to left, #F7F4EC, transparent);
-  z-index: 1; /* Ensure it's under the links */
+  z-index: 1000;
+  
 }
 
 .navbar ul {
-  //* For Simple Underline
   list-style-type: none;
   display: flex;
   gap: 20px;
   padding: 0;
   margin: 0;
-  position: relative; /* Keep this to position the links */
-  z-index: 2; /* Ensure links are above the underline */
-
-  //* For .png
-  background-image: url('/path/to/line.png'); /* Update with the correct path */
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% 1px; /* Adjust the size as needed */
+  position: relative;
+  z-index: 1001;
+  margin-bottom: 0rem;
 }
 
-.navbar-line {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px; /* Adjust as needed */
-  background-image: url('/src/assets/Underlines/1.png');
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: 100% 1px;
+
+#navbar-underline {
+  width: 252px; // Adjust based on actual size needed
+  height: auto;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -3rem;
+
+
+  // @media (max-width: 768px) {
+  //   width: 40%; // Adjust for smaller screens
+  // }
 }
 
-// .navbar ul::after {
-//   content: '';
-//   position: absolute;
-//   left: 0;
-//   bottom: 0; /* Position the line at the bottom of the UL */
-//   width: 100%; /* Full width of the UL */
-//   height: 1px; /* Set the thickness of the line here */
-//   background: linear-gradient(to left, #F7F4EC, transparent); /* Gradient from solid color to transparent */
-// }
+
 
 .navbar li {
   padding: 0;

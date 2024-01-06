@@ -21,6 +21,9 @@
 //   align-items: center;
 //   margin: 1rem;
 // }
+:host {
+  margin: 6rem 0;
+}
 
 .skill-cloud-ui {
   display: flex;

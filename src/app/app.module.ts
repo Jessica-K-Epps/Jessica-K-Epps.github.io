@@ -22,6 +22,7 @@ import { WordCloudComponent } from './views/landing-page/skills-and-tools/word-c
 import { CaseStudiesComponent } from './views/landing-page/case-studies/case-studies.component';
 import { CaseStudyComponent } from './views/landing-page/case-studies/case-study/case-study.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { CaseStudyCardComponent } from './shared/case-study-card/case-study-card.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     CaseStudiesComponent,
     CaseStudyComponent,
     NavbarComponent,
+    CaseStudyCardComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

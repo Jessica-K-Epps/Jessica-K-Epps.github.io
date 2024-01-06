@@ -30,3 +30,26 @@
   text-align: center;
   cursor: pointer;
 }
+
+//* Card Carousel
+.card-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; // Provides a 3D-space for child elements.
+
+  .card {
+    transition: transform 0.3s ease-in-out;
+    // Common card styles...
+  }
+
+  .left-card, .right-card {
+    transform: scale(0.8); // Slightly smaller than the center card.
+    z-index: 1;
+  }
+
+  .center-card {
+    transform: scale(1.1); // Slightly larger than the side cards.
+    z-index: 2; // Ensures it's above the other cards.
+  }
+}
