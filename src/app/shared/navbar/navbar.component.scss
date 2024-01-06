@@ -1,7 +1,7 @@
 /* navbar.component.scss */
 :host {
   height: auto !important;
-  margin-bottom: 4rem;
+  // margin-bottom: 3rem;
 }
 
 .navbar {
@@ -10,7 +10,9 @@
   right: 0;
   display: flex;
   flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center children horizontally */
+  // align-items: center; 
+  align-items: flex-end; // This will align children to the right
+  // justify-content: flex-end; 
   width: 100%; /* Take full width */
   font-family: "Verlag-Light", sans-serif;
   color: #F7F4EC;
@@ -29,6 +31,7 @@
   position: relative;
   z-index: 1001;
   margin-bottom: 0rem;
+  // margin-right: 1.75rem;
 }
 
 
@@ -41,6 +44,7 @@
   margin-right: auto;
   margin-top: -3rem;
 
+  // align-self: flex-end;
 
   // @media (max-width: 768px) {
   //   width: 40%; // Adjust for smaller screens

@@ -2,6 +2,7 @@
 
 :host {
   // height: 600px !important;
+  margin: 12rem 0 6rem 0;
 }
 
 .name-title {
@@ -11,7 +12,7 @@
   justify-content: center;
   position: relative;
   // margin-bottom: 2rem;
-  margin: 12rem 0 6rem 0;
+  
 
   .first-name {
     font-size: 3rem;
@@ -86,3 +87,20 @@
   transform: translateX(-50%);
 }
 
+#banner-underline {
+  width: 502px; // Adjust based on actual size needed
+  height: auto;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-top: -3.5rem;
+  margin-top: 3rem;
+  opacity: 100%;
+
+  // align-self: flex-end;
+
+  // @media (max-width: 768px) {
+  //   width: 40%; // Adjust for smaller screens
+  // }
+}
