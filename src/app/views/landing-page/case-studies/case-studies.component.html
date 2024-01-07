@@ -1,8 +1,26 @@
-<div class="description" (click)="navigateToCaseStudy()">
+<!-- Version 1
+  - Preliminary setup for the "3 Card" setup (middle one being larger and slightly overlapping the flankers)
+ -->
+<!-- <div class="description" (click)="navigateToCaseStudy()">
   <h2>Case Studies</h2>
   <div class="card-carousel">
     <div class="card left-card">Left Item</div>
     <div class="card center-card">Center Item</div>
     <div class="card right-card">Right Item</div>
+  </div>
+</div> -->
+
+<!-- Version 2 -->
+<div class="description">
+  <h2>Case Studies</h2>
+  <div class="card-carousel">
+    <app-case-study-card
+      *ngFor="let caseStudy of caseStudies"
+      [isOpen]="activeCard === caseStudy.id"
+      (click)="setActiveCard(caseStudy.id)"
+      [orgName]="caseStudy.orgName"
+      [cardColor]="caseStudy.color"
+    >
+    </app-case-study-card>
   </div>
 </div>

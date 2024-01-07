@@ -23,6 +23,9 @@ import { CaseStudiesComponent } from './views/landing-page/case-studies/case-stu
 import { CaseStudyComponent } from './views/landing-page/case-studies/case-study/case-study.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CaseStudyCardComponent } from './shared/case-study-card/case-study-card.component';
+import { CaseStudyJuilliardComponent } from './views/landing-page/case-studies/case-study-juilliard/case-study-juilliard.component';
+import { CaseStudyStGeorgesComponent } from './views/landing-page/case-studies/case-study-st-georges/case-study-st-georges.component';
+import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case-studies/case-study-tallahassee-symphony/case-study-tallahassee-symphony.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +43,9 @@ import { CaseStudyCardComponent } from './shared/case-study-card/case-study-card
     CaseStudyComponent,
     NavbarComponent,
     CaseStudyCardComponent,
+    CaseStudyJuilliardComponent,
+    CaseStudyStGeorgesComponent,
+    CaseStudyTallahasseeSymphonyComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
