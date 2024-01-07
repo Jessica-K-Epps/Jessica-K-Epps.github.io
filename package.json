@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "sLocal": "ng serve jessicaKEppsgithubio",
-    "build": "ng build",
+    "build": "ng build && cp CNAME dist/your-project-name/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "push": "ng build && git push"
