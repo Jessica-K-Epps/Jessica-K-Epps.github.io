@@ -5,13 +5,23 @@
   width: 75px; // Width of the closed card
   height: 400px;
   background: $jke-secondary-color;
+  opacity: .7;
+  background-size: cover; // Ensure the image covers the entire card
+  background-position: center; // Center the image on the card
+  background-repeat: no-repeat; // Don't repeat the background image
   box-shadow: 4px 4px 4px $jke-secondary-color;
   transition: all 0.2s ease-in-out;
   position: relative; // For positioning the text inside
+  ;
 
   .card-title {
-    color: $jke-quad-color;
     font-family: "Adelia 3";
+    color: #f7f4ec;
+    opacity: 1;
+    // box-shadow: 2px 2px 2px solid $jke-primary-color;
+    // background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: .2rem .2rem .25rem $jke-background3-color, -.2rem -.2rem .25rem $jke-primary-color;    // text-shadow: 4px 4px 8px red !important;
+    // text:
     position: absolute;
     white-space: nowrap; // No wrapping for closed card
     font-size: 0.8rem;
@@ -25,6 +35,7 @@
 
   &.open {
     width: 300px;
+    opacity: 1;
 
     .card-title {
       display: flex; // Use flexbox for centering
@@ -40,6 +51,7 @@
       width: 90%; // Set a width to constrain the text
       height: 100%; // Take full height of the card
       padding: 10px; // Add padding for better readability
+      // text-shadow: 1rem 1rem 2rem 2rem $jke-background3-color !important;
     }
   }
 }

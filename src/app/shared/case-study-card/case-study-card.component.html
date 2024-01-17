@@ -2,7 +2,10 @@
   class="card"
   [class.open]="isOpen"
   (click)="toggleCard()"
-  [ngStyle]="{ 'background-color': getBackgroundColor(cardColor) }"
+  [ngStyle]="{
+    'background-color': getBackgroundColor(cardColor),
+    'background-image': 'url(' + cardImage + ')'
+  }"
 >
   <ng-content></ng-content>
   <div class="card-title">{{ orgName }}</div>

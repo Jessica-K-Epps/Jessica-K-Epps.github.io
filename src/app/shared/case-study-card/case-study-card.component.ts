@@ -11,6 +11,7 @@ export class CaseStudyCardComponent {
   @Input() isOpen = false;
   @Input() orgName: string = '';
   @Input() cardColor: string = '';
+  @Input() cardImage: string = ''; 
   @Output() cardClick = new EventEmitter<boolean>();
 
   

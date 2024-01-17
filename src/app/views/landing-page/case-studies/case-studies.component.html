@@ -18,6 +18,7 @@
       *ngFor="let caseStudy of caseStudies"
       [isOpen]="activeCard === caseStudy.id"
       (click)="setActiveCard(caseStudy.id)"
+      [cardImage]="caseStudy.cardImage"
       [orgName]="caseStudy.orgName"
       [cardColor]="caseStudy.color"
     >
