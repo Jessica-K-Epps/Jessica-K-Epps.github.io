@@ -2,144 +2,217 @@
   {
     "name": "Social Media Best Practices",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Social Media Management",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Content Creation",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Content Strategy",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Social Media Analytics",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Social Media Optimization",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Social Listening",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Reputation Management",
     "category": "Social Media",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Marketing Campaign Management",
     "category": "Marketing",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Copywriting and Editing",
     "category": "Marketing",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
-  { "name": "Branding", "category": "Marketing", "highlighted": false },
-  { "name": "Graphic Design", "category": "Marketing", "highlighted": false },
+  {
+    "name": "Branding",
+    "category": "Marketing",
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Graphic Design",
+    "category": "Marketing",
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
   {
     "name": "Digital Marketing",
     "category": "Marketing",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Communications",
     "category": "Marketing",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Adobe (Illustrator, InDesign, Photoshop)",
     "category": "Design Tools",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#5c5c5c"
   },
-  { "name": "Canva", "category": "Design Tools", "highlighted": false },
+  {
+    "name": "Canva",
+    "category": "Design Tools",
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
   {
     "name": "Constant Contact Email Marketing",
     "category": "Email Marketing",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#1f1f1f"
   },
   {
     "name": "Meta Ads Manager",
     "category": "Email Marketing",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#1f1f1f"
   },
   {
     "name": "Google (AdWords, Analytics, Suite)",
     "category": "Analytics Tools",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#1f1f1f"
   },
   {
     "name": "Buffer",
     "category": "Social Media Management Tools",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Hootsuite",
     "category": "Social Media Management Tools",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Sprout Social",
     "category": "Social Media Management Tools",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#d59ba7"
   },
   {
     "name": "Facebook",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Instagram",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "LinkedIn",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Pinterest",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "YouTube",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "TikTok",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Twitter/X",
     "category": "Social Media Platforms",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#fffaf0"
   },
   {
     "name": "Asana",
     "category": "Task / Project Management Systems",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#5c5c5c"
   },
   {
     "name": "Wrike",
     "category": "Task / Project Management Systems",
-    "highlighted": false
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "task",
+    "category": "unknown",
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "tiktok",
+    "category": "unknown",
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "platforms",
+    "category": "unknown",
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "manager",
+    "category": "unknown",
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "canvas",
+    "category": "unknown",
+    "highlighted": false,
+    "color": "#5c5c5c"
   }
 ]

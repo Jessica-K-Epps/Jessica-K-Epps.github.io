@@ -18,14 +18,16 @@ import { ContactMeComponent } from './views/landing-page/contact-me/contact-me.c
 import { PortfolioSummaryComponent } from './views/landing-page/portfolio-summary/portfolio-summary.component';
 import { AboutMeExpandedComponent } from './views/about-me-expanded/about-me-expanded.component';
 import { SkillsAndToolsComponent } from './views/landing-page/skills-and-tools/skills-and-tools.component';
-import { WordCloudComponent } from './views/landing-page/skills-and-tools/word-cloud/word-cloud.component';
 import { CaseStudiesComponent } from './views/landing-page/case-studies/case-studies.component';
 import { CaseStudyComponent } from './views/landing-page/case-studies/case-study/case-study.component';
-import { NavbarComponent } from './shared/navbar/navbar.component';
 import { CaseStudyCardComponent } from './shared/case-study-card/case-study-card.component';
 import { CaseStudyJuilliardComponent } from './views/landing-page/case-studies/case-study-juilliard/case-study-juilliard.component';
 import { CaseStudyStGeorgesComponent } from './views/landing-page/case-studies/case-study-st-georges/case-study-st-georges.component';
 import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case-studies/case-study-tallahassee-symphony/case-study-tallahassee-symphony.component';
+
+// App Shared Components
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { WordCloudComponent } from './shared/word-cloud/word-cloud.component';
 
 @NgModule({
   declarations: [
@@ -38,14 +40,14 @@ import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case
     PortfolioSummaryComponent,
     AboutMeExpandedComponent,
     SkillsAndToolsComponent,
-    WordCloudComponent,
     CaseStudiesComponent,
     CaseStudyComponent,
-    NavbarComponent,
     CaseStudyCardComponent,
     CaseStudyJuilliardComponent,
     CaseStudyStGeorgesComponent,
     CaseStudyTallahasseeSymphonyComponent,
+    WordCloudComponent,
+    NavbarComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
