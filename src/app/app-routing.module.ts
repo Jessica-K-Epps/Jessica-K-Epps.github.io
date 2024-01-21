@@ -1,6 +1,7 @@
 // Library Imports
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common'; // added to handle 404 issue when hard-refreshing on github pages-deployment
 
 // App Imports
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
@@ -22,5 +23,6 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}] // added to handle 404 issue when hard-refreshing on github pages-deployment
 })
 export class AppRoutingModule {}
