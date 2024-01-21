@@ -8,17 +8,6 @@ main#landing-page-main {
   // background-color: aqua;
   justify-items: center; /* Centers content horizontally in the grid */
   align-items: center; /* Centers content vertically in the grid */
-  background: linear-gradient(155deg, #5d6975, #22303c 40%, #050b0f 70%);
-  // background: linear-gradient(
-  //   135deg,
-  //   #5D6975 0%, /* Start with the lighter gray */
-  //   #7E8A95 20%, /* Intermediate color */
-  //   #22303C 50%, /* Intermediate color */
-  //   #39484E 80%, /* Intermediate color */
-  //   #050B0F 100% /* End with the darker gray */
-  // );
-  background-size: cover; //  This property ensures that the gradient background covers the entire viewport, regardless of the viewport's size or aspect ratio. It scales the background image as much as possible without exceeding the viewport.
-  background-attachment: fixed; // This property fixes the background image in place relative to the viewport. It means that when you scroll the page, the background stays in its position, creating a parallax-like effect
 }
 
 main#landing-page-main > * {
