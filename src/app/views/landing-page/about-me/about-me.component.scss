@@ -1,66 +1,59 @@
 @import "src/styles.scss";
 
 :host {
-  // background-color: $jke-primary-color;
-  flex-direction: row !important;
+  margin: 6rem 0;
+}
+
+.about-me-section {
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .content-row {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch; // Ensures equal height
   justify-content: center;
   width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
-img#profile-pic {
+#profile-pic {
+  flex: 1; // Flex grow to fill space
   max-height: 350px;
-  height: auto;
-  width: auto;
+  height: 100%; // Equal height as sibling
   margin-right: 1rem;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
-  transition: opacity 0.3s ease;
-
-  @media (max-width: 768px) {
-    position: absolute;
-    z-index: 0;
-    opacity: 0.35;
-    width: auto;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  object-fit: cover; // Ensures the image covers the area
 }
 
 .description {
+  flex: 1; // Flex grow to fill space
   max-width: 400px;
   margin-left: 1rem;
   position: relative;
-  z-index: 1;
-
-  @media (max-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
-    text-align: center;
-  }
-}
-
-.description h2 {
-  font-size: 2rem;
-  margin: 1rem;
-  text-align: center;
-}
-
-.description p {
-  margin: 1rem;
+  text-align: left; // Set text to left-aligned
 }
 
 p {
+  margin: 1rem;
   transition: color 0.3s, transform 0.3s;
+  background: none;
+  
+  &:hover {
+    transform: translateY(-1px) translateX(-1px);
+    cursor: pointer;
+    color: $jke-primary-color;
+  }
 }
 
-p:hover {
-  // color: white;
-  transform: translateY(1px) translateX(1px);
-  cursor: pointer;
-}
+/* Additional media query adjustments as needed */

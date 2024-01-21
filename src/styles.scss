@@ -1,4 +1,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 //** COLORS
 
@@ -9,6 +11,9 @@ $jke-primary-color: #d59ba7;
 $jke-secondary-color: #fffaf0;
 $jke-tertiary-color: #5c5c5c;
 $jke-quad-color: #1f1f1f;
+$jke-background1-color: #5d6975;
+$jke-background2-color: #22303c;
+$jke-background3-color: #050b0f;
 
 .jke-primary-color {
   background-color: var(jke-primary-color);
@@ -26,8 +31,24 @@ $jke-quad-color: #1f1f1f;
 }
 
 @font-face {
+  font-family: "Adelia 3";
+  src: url("/assets/fonts/from_jess/adelia_3/adelia.otf") format("truetype");
+}
+
+@font-face {
   font-family: "Verlag";
   src: url("/assets/fonts/Verlag-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Verlang Light"; // Name the font family
+  src: url("/assets/fonts/from_jess/Verlag/Verlag Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Verlag-Light";
+  src: url("/assets/fonts/Verlag-Light.ttf") format("truetype");
+  font-weight: 300; // Assuming 300 is the weight of the lighter font
 }
 
 //** GLOBAL STYLES
@@ -39,12 +60,14 @@ h4,
 h5,
 h6 {
   font-family: "Adelia", sans-serif;
+  // font-family: "Verlang-light", sans-serif;
+  letter-spacing: .65rem;
   font-size: 2rem;
 }
 
 body,
 p {
-  font-family: "Verlag", sans-serif;
+  font-family: "Verlag Light", sans-serif;
   // color: #F9F6F2;
   color: #f7f4ec;
 

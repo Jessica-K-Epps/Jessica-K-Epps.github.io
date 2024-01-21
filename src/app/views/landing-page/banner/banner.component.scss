@@ -1,8 +1,8 @@
-// Import the global styles
 @import "src/styles.scss";
 
 :host {
-  height: 600px !important;
+  // height: 600px !important;
+  margin: 12rem 0 6rem 0;
 }
 
 .name-title {
@@ -10,24 +10,58 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
-}
+  position: relative;
+  // margin-bottom: 2rem;
+  
 
-.name-title h1 {
-  font-size: 3rem;
-  margin: 1rem;
+  .first-name {
+    font-size: 3rem;
+    margin: 1rem;
+    margin-bottom: -2rem;
+    position: relative;
+    z-index: 1;
+    font-family: "Adelia", sans-serif;
+    // font-family: "Adelia 3", sans-serif;
+    font-size: 7rem;
+    color: #d59ba7;
+  }
+
+  .last-name {
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding-bottom: -20px;
+    position: relative;
+    z-index: 2;
+    font-family: "Verlang Light", sans-serif;
+    font-size: 3rem;
+  }
+
+
+  label {
+    font-family: "Verlang Light", sans-serif;
+    letter-spacing: .20rem;
+    margin-top: 1rem;
+    // text-shadow: 2px 2px 2px #d59ba7;
+
+    span::before {
+      content: ' • ';
+      margin: 0 1.5rem;
+      color: #d59ba7;
+      font-size: 1.5rem;
+      text-shadow: none;
+    }
+
+  }
 }
 
 .links {
   display: flex;
-  // flex-direction: column;
   justify-content: center;
-}
 
-.links {
-  .fab {
+  .fab, .fa-envelope {
     font-size: 2rem;
     margin: 0.5rem;
+    margin-top: -.5rem;
     cursor: pointer;
     color: #f7f4ec;
 
@@ -42,13 +76,33 @@
 }
 
 .icon-button {
-  font-size: 24px; /* Adjust size as needed */
+  font-size: 24px;
   cursor: pointer;
   margin: 5px;
-  // color: #000; /* Or any color you prefer */
-  color: #f7f4ec; /* Or any color you prefer */
+  color: #f7f4ec;
 }
 
-// .icon-button:hover {
-//   color: #555; /* Color on hover */
-// }
+.copy-message {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#banner-underline {
+  width: 502px; // Adjust based on actual size needed
+  height: auto;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // margin-top: -3.5rem;
+  margin-top: 2rem;
+  opacity: 87.5%;
+
+  // align-self: flex-end;
+
+  // @media (max-width: 768px) {
+  //   width: 40%; // Adjust for smaller screens
+  // }
+}
