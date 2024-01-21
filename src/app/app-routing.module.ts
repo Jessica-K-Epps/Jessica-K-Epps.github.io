@@ -11,12 +11,12 @@ import { CaseStudyStGeorgesComponent } from './views/landing-page/case-studies/c
 import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case-studies/case-study-tallahassee-symphony/case-study-tallahassee-symphony.component';
 
 const routes: Routes = [
-  { path: '', component: LandingPageComponent },
   { path: 'about-me-expanded', component: AboutMeExpandedComponent },
   { path: 'case-study', component: CaseStudyComponent },
   { path: 'case-study/juilliard', component: CaseStudyJuilliardComponent },
   { path: 'case-study/st-georges', component: CaseStudyStGeorgesComponent },
   { path: 'case-study/tallahassee-symphony', component: CaseStudyTallahasseeSymphonyComponent },
+  { path: '', component: LandingPageComponent },
 ];
 
 @NgModule({
