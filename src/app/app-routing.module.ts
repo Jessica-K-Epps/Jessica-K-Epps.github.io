@@ -13,7 +13,7 @@ import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case
 
 const routes: Routes = [
   { path: 'about-me-expanded', component: AboutMeExpandedComponent },
-  { path: 'case-study', component: CaseStudyComponent },
+  { path: 'case-study/test', component: CaseStudyComponent },
   { path: 'case-study/juilliard', component: CaseStudyJuilliardComponent },
   { path: 'case-study/st-georges', component: CaseStudyStGeorgesComponent },
   { path: 'case-study/tallahassee-symphony', component: CaseStudyTallahasseeSymphonyComponent },
