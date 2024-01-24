@@ -4,7 +4,6 @@
 
 // import jsonData from 'src/app/views/landing-page/skills-and-tools/skills.json';
 
-
 // interface Word {
 //   text: string;
 //   size: number;
@@ -31,7 +30,7 @@
 //   ngOnInit() {
 //     window.addEventListener('resize', this.renderWordCloud.bind(this));
 //   }
-  
+
 //   ngOnDestroy() {
 //     window.removeEventListener('resize', this.renderWordCloud.bind(this));
 //   }
@@ -64,7 +63,7 @@
 //           .enter()
 //           .append('text')
 //             .style('font-size', (d: any) => `${d.size}px`) // Type assertion here
-//             .style('font-family', 'Impact') 
+//             .style('font-family', 'Impact')
 //             .style('fill', (d: any, i: any) => d3.schemeCategory10[i % 10]) // Type assertion here
 //             .attr('text-anchor', 'middle')
 //             .attr('transform', (d: any) => `translate(${[d.x, d.y]})rotate(${d.rotate  || 0})`) // Type assertion here
@@ -74,6 +73,8 @@
 //     wordLayout.start();
 //   }
 // }
+
+//
 
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 import * as d3 from 'd3';
@@ -97,28 +98,30 @@ const colorMap = {
   '$jke-primary-color': '#d59ba7',
   '$jke-secondary-color': '#fffaf0',
   '$jke-tertiary-color': '#5c5c5c',
-  '$jke-quad-color': '#1f1f1f'
+  '$jke-quad-color': '#1f1f1f',
 };
 
 @Component({
   selector: 'app-word-cloud',
   templateUrl: './word-cloud.component.html',
-  styleUrls: ['./word-cloud.component.scss']
+  styleUrls: ['./word-cloud.component.scss'],
 })
 export class WordCloudComponent implements AfterViewInit {
-  @ViewChild('wordCloudContainer', { static: true }) wordCloudContainer!: ElementRef;
+  @ViewChild('wordCloudContainer', { static: true })
+  wordCloudContainer!: ElementRef;
   words: Word[] = [];
 
   constructor() {
     // Prepare the words array from jsonData
-    this.words = jsonData.map(item => {
+    this.words = jsonData.map((item) => {
+      console.log('word: ', item.name);
       // Determine the color based on the category, using a switch or if-else structure
       let color = colorMap['$jke-primary-color']; // Default color
-      if (item.category === 'Marketing') {
+      if (item.categories[0] === 'Marketing') {
         color = colorMap['$jke-secondary-color'];
-      } else if (item.category === 'Design Tools') {
+      } else if (item.categories[0] === 'Social Media') {
         color = colorMap['$jke-tertiary-color'];
-      } else if (item.category === 'Email Marketing') {
+      } else if (item.categories[0] === 'Social Media Platforms') {
         color = colorMap['$jke-quad-color'];
       }
       // Add more conditions for other categories as needed
@@ -127,7 +130,7 @@ export class WordCloudComponent implements AfterViewInit {
         text: item.name,
         size: this.calculateSize(item), // You need to define how to calculate the size
         color: color,
-        rotate: 0 // Set this to the desired rotation if needed
+        rotate: 0, // Set this to the desired rotation if needed
       };
     });
   }
@@ -149,37 +152,43 @@ export class WordCloudComponent implements AfterViewInit {
   }
 
   renderWordCloud() {
-        const width = this.wordCloudContainer.nativeElement.offsetWidth;
-        const height = this.wordCloudContainer.nativeElement.offsetHeight;
-    
-        const wordLayout = cloud()
-          .size([width, height])
-          .words(this.words as any[]) // Type assertion here
-          .padding(5)
-          .rotate(() => 0)
-          .fontSize((d: any) => d.size) // Type assertion here
-          .on('end', (words: Word[]) => {
-            const svg = d3.select(this.wordCloudContainer.nativeElement)
-              .append('svg')
-                .attr('width', width)
-                .attr('height', height);
-    
-            const group = svg.append('g')
-                .attr('transform', `translate(${width / 2},${height / 2})`);
-    
-            group.selectAll('text')
-              .data(words)
-              .enter()
-              .append('text')
-                .style('font-size', (d: any) => `${d.size}px`) // Type assertion here
-                .style('font-family', '"Verlag Light", sans-serif') 
-                .style('fill', (d: any) => d.color)
-                .attr('text-anchor', 'middle')
-                .attr('transform', (d: any) => `translate(${[d.x, d.y]})rotate(${d.rotate  || 0})`) // Type assertion here
-                .text((d: any) => d.text); // Type assertion here
-          });
-    
-        wordLayout.start();
+    const width = this.wordCloudContainer.nativeElement.offsetWidth;
+    const height = this.wordCloudContainer.nativeElement.offsetHeight;
+
+    const wordLayout = cloud()
+      .size([width, height])
+      .words(this.words as any[]) // Type assertion here
+      .padding(5)
+      .rotate(() => 0)
+      .fontSize((d: any) => d.size) // Type assertion here
+      .on('end', (words: Word[]) => {
+        const svg = d3
+          .select(this.wordCloudContainer.nativeElement)
+          .append('svg')
+          .attr('width', width)
+          .attr('height', height);
+
+        const group = svg
+          .append('g')
+          .attr('transform', `translate(${width / 2},${height / 2})`);
+
+        group
+          .selectAll('text')
+          .data(words)
+          .enter()
+          .append('text')
+          .style('font-size', (d: any) => `${d.size}px`) // Type assertion here
+          .style('font-family', '"Verlag Light", sans-serif')
+          .style('fill', (d: any) => d.color)
+          .attr('text-anchor', 'middle')
+          .attr(
+            'transform',
+            (d: any) => `translate(${[d.x, d.y]})rotate(${d.rotate || 0})`
+          ) // Type assertion here
+          .text((d: any) => d.text); // Type assertion here
+      });
+
+    wordLayout.start();
   }
 }
 

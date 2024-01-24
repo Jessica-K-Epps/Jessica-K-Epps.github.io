@@ -1,374 +1,260 @@
 [
   {
     "name": "Social Media Best Practices",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Social Media Management",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Content Creation",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Content Strategy",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Social Media Analytics",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Social Media Optimization",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Social Listening",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Reputation Management",
-    "category": "Social Media",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
-    "name": "Marketing Campaign Management",
-    "category": "Marketing",
-    "highlighted": false,
-    "color": "#fffaf0"
-  },
-  {
-    "name": "Copywriting and Editing",
-    "category": "Marketing",
-    "highlighted": false,
-    "color": "#fffaf0"
-  },
-  {
-    "name": "Branding",
-    "category": "Marketing",
-    "highlighted": false,
-    "color": "#fffaf0"
-  },
-  {
-    "name": "Graphic Design",
-    "category": "Marketing",
-    "highlighted": false,
-    "color": "#fffaf0"
-  },
-  {
-    "name": "Digital Marketing",
-    "category": "Marketing",
-    "highlighted": false,
-    "color": "#fffaf0"
-  },
-  {
-    "name": "Communications",
-    "category": "Marketing",
-    "highlighted": false,
-    "color": "#fffaf0"
-  },
-  {
-    "name": "Adobe (Illustrator, InDesign, Photoshop)",
-    "category": "Design Tools",
+    "name": "Trend Awareness",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "Canva",
-    "category": "Design Tools",
+    "name": "Growth",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#5c5c5c"
-  },
-  {
-    "name": "Constant Contact Email Marketing",
-    "category": "Email Marketing",
-    "highlighted": false,
-    "color": "#1f1f1f"
-  },
-  {
-    "name": "Meta Ads Manager",
-    "category": "Email Marketing",
-    "highlighted": false,
-    "color": "#1f1f1f"
-  },
-  {
-    "name": "Google (AdWords, Analytics, Suite)",
-    "category": "Analytics Tools",
-    "highlighted": false,
-    "color": "#1f1f1f"
   },
   {
     "name": "Buffer",
-    "category": "Social Media Management Tools",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Hootsuite",
-    "category": "Social Media Management Tools",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
     "name": "Sprout Social",
-    "category": "Social Media Management Tools",
+    "categories": ["Social Media"],
     "highlighted": false,
     "color": "#d59ba7"
   },
   {
+    "name": "Canva",
+    "categories": ["Social Media"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "Data Analysis",
+    "categories": ["Social Media"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "Marketing Campaign Management",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Copywriting and Editing",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Branding",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Graphic Design",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Digital Marketing",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Communications",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#fffaf0"
+  },
+  {
+    "name": "Meta Ads Manager",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#1f1f1f"
+  },
+  {
+    "name": "Traditional Marketing",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "Advertising",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "Adobe (Illustrator, InDesign, Photoshop)",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
+    "name": "Google Analytics",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#1f1f1f"
+  },
+  {
+    "name": "Data Analysis",
+    "categories": ["Marketing"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
+  {
     "name": "Facebook",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
     "name": "Instagram",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
     "name": "LinkedIn",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
     "name": "Pinterest",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
     "name": "YouTube",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
     "name": "TikTok",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
     "name": "Twitter/X",
-    "category": "Social Media Platforms",
+    "categories": ["Social Media Platforms"],
     "highlighted": false,
     "color": "#fffaf0"
   },
   {
-    "name": "Asana",
-    "category": "Task / Project Management Systems",
+    "name": "Compassion",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "Wrike",
-    "category": "Task / Project Management Systems",
+    "name": "Loyalty",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "task",
-    "category": "unknown",
+    "name": "Creativity",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "tiktok",
-    "category": "unknown",
+    "name": "Leadership",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "platforms",
-    "category": "unknown",
+    "name": "Respect",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "manager",
-    "category": "unknown",
+    "name": "Honesty",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "canvas",
-    "category": "unknown",
+    "name": "Communication",
+    "categories": ["Soft Skills"],
     "highlighted": false,
     "color": "#5c5c5c"
   },
   {
-    "name": "social", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
+    "name": "Teamwork",
+    "categories": ["Soft Skills"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  },
   {
-    "name": "adobe", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "community", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "management", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "media", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "strategy", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "content", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "suite", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "project", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "engagement", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "analytics", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "compassion", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "loyalty", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "microsoft", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "design", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "services", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "best", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "creativity", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "growth", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "tools", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "analysis", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "leadership", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "respectful", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "honestly", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "customer", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "trends", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "ads", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "office", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "communication", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "teamwork", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"},
-  {
-    "name": "data", 
-    "category": "unknown", 
-    "highlighted": false, 
-    "color": "#5c5c5c"}
+    "name": "Collaboration",
+    "categories": ["Soft Skills"],
+    "highlighted": false,
+    "color": "#5c5c5c"
+  }
 ]
-

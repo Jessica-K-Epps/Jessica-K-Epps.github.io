@@ -1,57 +1,158 @@
+// @import "src/styles.scss";
+
+// .card {
+//   border-radius: 10px;
+//   width: 75px; // Width of the closed card
+//   height: 400px;
+//   background: $jke-secondary-color;
+//   opacity: .7;
+//   background-size: cover; // Ensure the image covers the entire card
+//   background-position: center; // Center the image on the card
+//   background-repeat: no-repeat; // Don't repeat the background image
+//   box-shadow: 4px 4px 4px $jke-secondary-color;
+//   transition: all 0.2s ease-in-out;
+//   position: relative; // For positioning the text inside
+//   ;
+
+//   .card-title {
+//     font-family: "Adelia 3";
+//     color: #f7f4ec;
+//     opacity: 1;
+//     // box-shadow: 2px 2px 2px solid $jke-primary-color;
+//     // background-color: rgba(0, 0, 0, 0.5);
+//     text-shadow: .2rem .2rem .25rem $jke-background3-color, -.2rem -.2rem .25rem $jke-primary-color;    // text-shadow: 4px 4px 8px red !important;
+//     // text:
+//     position: absolute;
+//     white-space: nowrap; // No wrapping for closed card
+//     font-size: 0.8rem;
+//     text-align: center; // Center text horizontally
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%) rotate(90deg); // Center and rotate text
+//     transform-origin: 50% 50%; // Rotate around the center
+//     transition: transform 0.3s ease-in-out;
+//   }
+
+//   &.open {
+//     width: 300px;
+//     opacity: 1;
+
+//     .card-title {
+//       display: flex; // Use flexbox for centering
+//       justify-content: center; // Center horizontally
+//       align-items: center; // Center vertically
+//       font-size: 1rem;
+//       transform: none; // No rotation for open card
+//       white-space: normal; // Allow wrapping for open card
+//       text-align: center; // Center-align the text
+//       position: relative; // Reset position for open card
+//       top: auto;
+//       left: auto;
+//       width: 90%; // Set a width to constrain the text
+//       height: 100%; // Take full height of the card
+//       padding: 10px; // Add padding for better readability
+//       // text-shadow: 1rem 1rem 2rem 2rem $jke-background3-color !important;
+//     }
+//   }
+// }
 @import "src/styles.scss";
 
 .card {
   border-radius: 10px;
-  width: 75px; // Width of the closed card
+  width: 75px; // Closed-card width
   height: 400px;
   background: $jke-secondary-color;
-  opacity: .7;
-  background-size: cover; // Ensure the image covers the entire card
-  background-position: center; // Center the image on the card
-  background-repeat: no-repeat; // Don't repeat the background image
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 4px 4px 4px $jke-secondary-color;
   transition: all 0.2s ease-in-out;
-  position: relative; // For positioning the text inside
-  ;
+  position: relative;
+  overflow: hidden; // Ensure pseudo-elements don't extend beyond the card
+
+  // Darken the background for closed cards
+  // Darken the background for closed cards more
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); // Made darker by increasing opacity
+    transition: background-color 0.2s ease-in-out;
+  }
 
   .card-title {
     font-family: "Adelia 3";
     color: #f7f4ec;
-    opacity: 1;
-    // box-shadow: 2px 2px 2px solid $jke-primary-color;
-    // background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: .2rem .2rem .25rem $jke-background3-color, -.2rem -.2rem .25rem $jke-primary-color;    // text-shadow: 4px 4px 8px red !important;
-    // text:
+    font-weight: bold;
+    padding: 20px 20px; // Increased padding for more background space
+    border-radius: 5px;
     position: absolute;
-    white-space: nowrap; // No wrapping for closed card
+    white-space: nowrap;
     font-size: 0.8rem;
-    text-align: center; // Center text horizontally
+    text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg); // Center and rotate text
-    transform-origin: 50% 50%; // Rotate around the center
-    transition: transform 0.3s ease-in-out;
+    transform: translate(-50%, -50%) rotate(90deg); // Corrected for centering
+    transform-origin: center; // Center the rotation point
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8),
+      -2px -2px 4px rgba(255, 255, 255, 0.8);
+
+    // Use pseudo-element for gradient background to ensure consistent fall-off
+    &::after {
+      content: "";
+      position: absolute;
+      top: -20px; // Extend further for an elliptical shape
+      bottom: -20px;
+      left: -10px; // Narrower sides to emphasize width
+      right: -10px;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 0, 0, 0.5) 50%,
+        transparent
+      );
+      z-index: -1;
+      border-radius: 50%;
+    }
   }
 
   &.open {
-    width: 300px;
+    width: 300px; // Open-card width
     opacity: 1;
 
     .card-title {
-      display: flex; // Use flexbox for centering
-      justify-content: center; // Center horizontally
-      align-items: center; // Center vertically
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 1rem;
-      transform: none; // No rotation for open card
-      white-space: normal; // Allow wrapping for open card
-      text-align: center; // Center-align the text
-      position: relative; // Reset position for open card
+      transform: none; // Remove rotation for open card
+      white-space: normal;
+      text-align: center;
+      position: relative;
       top: auto;
       left: auto;
-      width: 90%; // Set a width to constrain the text
-      height: 100%; // Take full height of the card
-      padding: 10px; // Add padding for better readability
-      // text-shadow: 1rem 1rem 2rem 2rem $jke-background3-color !important;
+      width: 90%;
+      height: 100%;
+      padding: 10px;
+      background: radial-gradient(
+        circle at center,
+        rgba(0, 0, 0, 0.7) 0%,
+        transparent 50%
+      );
+
+      &::after {
+        // Remove or adjust the pseudo-element for the open state if necessary
+        display: none; // This hides the gradient background when open
+      }
+    }
+
+    &::before {
+      // Adjust or remove the darkening effect when the card is open
+      opacity: 0; // This makes the overlay transparent when open
     }
   }
 }

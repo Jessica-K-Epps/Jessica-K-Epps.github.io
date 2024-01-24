@@ -29,6 +29,7 @@ import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { WordCloudComponent } from './shared/word-cloud/word-cloud.component';
 import { CaseStudyStatCardComponent } from './shared/case-study-stat-card/case-study-stat-card.component';
+import { CaseStudyJuilliard2Component } from './views/landing-page/case-studies/case-study-juilliard2/case-study-juilliard2.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { CaseStudyStatCardComponent } from './shared/case-study-stat-card/case-s
     WordCloudComponent,
     NavbarComponent,
     CaseStudyStatCardComponent,
+    CaseStudyJuilliard2Component,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],

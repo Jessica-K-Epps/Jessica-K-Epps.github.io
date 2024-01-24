@@ -1,15 +1,26 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CaseStudiesService {
-
-  constructor() { }
+  constructor() {}
   private caseStudies = [
-    { id: 'juilliard', orgName: 'Juilliard', cardImage: 'assets/images/Juilliard_card.jpg' },
-    { id: 'st-georges', orgName: "St George's University", cardImage: 'assets/images/SGU_card.jpg' },
-    { id: 'tallahassee-symphony', orgName: 'Tallahassee Symphony Orchestra', cardImage: 'assets/images/TSO_card.jpg' }
+    {
+      id: 'st-georges',
+      orgName: "St George's University",
+      cardImage: 'assets/images/SGU_card.jpg',
+    },
+    {
+      id: 'juilliard',
+      orgName: 'Juilliard',
+      cardImage: 'assets/images/Juilliard_card.jpg',
+    },
+    {
+      id: 'tallahassee-symphony',
+      orgName: 'Tallahassee Symphony Orchestra',
+      cardImage: 'assets/images/TSO_card.jpg',
+    },
     // ... other case studies
   ];
 
