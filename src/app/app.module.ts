@@ -28,6 +28,7 @@ import { CaseStudyTallahasseeSymphonyComponent } from './views/landing-page/case
 // App Shared Components
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { WordCloudComponent } from './shared/word-cloud/word-cloud.component';
+import { CaseStudyStatCardComponent } from './shared/case-study-stat-card/case-study-stat-card.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { WordCloudComponent } from './shared/word-cloud/word-cloud.component';
     CaseStudyTallahasseeSymphonyComponent,
     WordCloudComponent,
     NavbarComponent,
+    CaseStudyStatCardComponent,
   ],
   imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
