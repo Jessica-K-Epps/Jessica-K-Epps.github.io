@@ -1,0 +1,25 @@
+<div class="site-todo-wrapper">
+  <h2
+    class="header"
+    (click)="toggleChecklist()"
+    [ngClass]="{ checklistShown: isChecklistVisible }"
+  >
+    Site To-Do
+  </h2>
+  <form [formGroup]="toDoForm" *ngIf="isChecklistVisible">
+    <div class="checklist" formArrayName="checklist">
+      <div
+        *ngFor="let task of checklistFormArray.controls; let i = index"
+        [formGroupName]="i"
+        class="checklist-item"
+      >
+        <p-checkbox
+          formControlName="checked"
+          [binary]="true"
+          [inputId]="'task' + i"
+        ></p-checkbox>
+        <label [for]="'task' + i">{{ task.get("label")?.value }}</label>
+      </div>
+    </div>
+  </form>
+</div>

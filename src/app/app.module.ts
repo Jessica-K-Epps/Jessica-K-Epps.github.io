@@ -1,11 +1,13 @@
 // Library Imports
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 // PrimeNG Imports
 import { ButtonModule } from 'primeng/button';
+import { CheckboxModule } from 'primeng/checkbox';
 
 // App Imports
 import { AppRoutingModule } from './app-routing.module';
@@ -30,6 +32,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { WordCloudComponent } from './shared/word-cloud/word-cloud.component';
 import { CaseStudyStatCardComponent } from './shared/case-study-stat-card/case-study-stat-card.component';
 import { CaseStudyJuilliard2Component } from './views/landing-page/case-studies/case-study-juilliard2/case-study-juilliard2.component';
+import { SiteTodoChecklistComponent } from './views/landing-page/site-todo-checklist/site-todo-checklist.component';
 
 @NgModule({
   declarations: [
@@ -52,8 +55,17 @@ import { CaseStudyJuilliard2Component } from './views/landing-page/case-studies/
     NavbarComponent,
     CaseStudyStatCardComponent,
     CaseStudyJuilliard2Component,
+    SiteTodoChecklistComponent,
   ],
-  imports: [BrowserModule, ButtonModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    ButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CheckboxModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
