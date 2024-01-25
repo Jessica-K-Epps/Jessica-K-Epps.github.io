@@ -54,6 +54,7 @@ export class SiteTodoChecklistComponent implements OnInit {
           '(James) Assess + provide alternatives for Case Study cards (box shaddow, basic accordian etc may be too simple/un-modern',
         checked: false,
       },
+      { label: '(James) Update Navbar to work', checked: false },
       { label: '_', checked: false },
     ]);
   }
