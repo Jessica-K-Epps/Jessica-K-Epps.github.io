@@ -1,4 +1,4 @@
-<div class="stat-card">
+<!-- <div class="stat-card">
   <img
     [src]="statProperty.iconPath"
     alt="{{ statProperty.title }}"
@@ -6,4 +6,17 @@
   />
   <div class="stat-title">{{ statProperty.title }}</div>
   <div class="stat-value">{{ statProperty.value }}</div>
+</div> -->
+
+<div class="stat-card">
+  <img
+    [src]="statProperty.iconPath"
+    alt="{{ statProperty.title }}"
+    class="stat-icon"
+  />
+  <div class="stat-title">{{ statProperty.title }}</div>
+  <div
+    class="stat-value"
+    [innerHTML]="statProperty.value | highlightNumbers"
+  ></div>
 </div>

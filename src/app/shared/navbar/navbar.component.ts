@@ -9,6 +9,11 @@ import { Router } from '@angular/router';
 export class NavbarComponent {
   constructor(private router: Router) {}
 
+  // TODO: determine what the navbar should do:
+  // - navigate to elements on every page?
+  // - navigate to pages of the app?
+  // TODO: make navbar work for all pages
+
   isHomeRoute(): boolean {
     return this.router.url === '/'; // Check if the current route is the home route
   }

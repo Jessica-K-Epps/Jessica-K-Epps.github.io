@@ -26,17 +26,20 @@ export class CaseStudyStGeorgesComponent {
       title: 'Audiance Growth',
       value: '1,038',
     },
+    // {
+    //   iconPath: '/assets/icons/clicksPink.png',
+    //   title: "Traffic Driven to 'Welcome' Website",
+    //   value: '179',
+    // },
+    // {
+    //   iconPath: '/assets/icons/clicksPink.png',
+    //   title: 'Traffic Driven to informational blog posts & articles',
+    //   value: '374',
+    // },
     {
       iconPath: '/assets/icons/clicksPink.png',
-      title: "Traffic Driven to 'Welcome' Website",
-      // value: 'paid: 1.6% CTR, organic: 0.3% CTR'
-      value: '179',
-    },
-    {
-      iconPath: '/assets/icons/clicksPink.png',
-      title: 'Traffic Driven to informational blog posts & articles',
-      // value: 'paid: 1.6% CTR, organic: 0.3% CTR'
-      value: '374',
+      title: 'Clicks to Websites',
+      value: '553',
     },
   ];
 }

@@ -17,5 +17,3 @@ export class CaseStudyStatCardComponent {
     title: '', 
     value: '' };
 }
-
-

@@ -5,7 +5,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common'; // add
 
 // App Imports
 import { LandingPageComponent } from './views/landing-page/landing-page.component';
-import { AboutMeExpandedComponent } from './views/about-me-expanded/about-me-expanded.component';
+import { AboutMeExpandedComponent } from './views/landing-page/about-me/about-me-expanded/about-me-expanded.component';
 import { CaseStudyComponent } from './views/landing-page/case-studies/case-study/case-study.component';
 import { CaseStudyJuilliardComponent } from './views/landing-page/case-studies/case-study-juilliard/case-study-juilliard.component';
 import { CaseStudyJuilliard2Component } from './views/landing-page/case-studies/case-study-juilliard2/case-study-juilliard2.component';

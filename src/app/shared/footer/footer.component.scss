@@ -1,0 +1,82 @@
+// .footer-container {
+//   text-align: center;
+//   padding: 20px;
+
+//   .footer-row {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 10px;
+
+//     .footer-label {
+//       font-weight: bold;
+//       margin-right: 10px;
+//     }
+
+//     .footer-link {
+//       color: #fffaf0; // Example link color
+//       text-decoration: none;
+//     }
+//   }
+
+//   .footer-copy {
+//     cursor: pointer;
+//     margin-left: 10px;
+
+//     &:hover {
+//       box-shadow: 0 0 5px #5c5c5c;
+//     }
+
+//     &.active {
+//       background-color: #d59ba7;
+//     }
+//   }
+// }
+
+.footer-container {
+  text-align: center;
+  margin: 3rem 0;
+
+  .footer-title {
+    font-weight: bold;
+    margin-bottom: 2rem;
+
+  }
+
+  .footer-icon {
+    cursor: pointer;
+    margin: 0 10px;
+    max-width: 30px;
+    transition: transform 0.1s ease;
+
+    // &:hover {
+
+    // }
+
+    &.active {
+      transform: scale(1.1);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;  // Initial size of the ripple
+      height: 20px;
+      background: radial-gradient(circle, #fffaf0 10%, transparent 10.01%);
+      background-size: 100%;
+      background-position: center;
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+      transition: transform 0.5s, opacity 1s;
+    }
+
+    &:active::after {
+      transform: translate(-50%, -50%) scale(10);
+      opacity: 1;
+      transition: transform 0.5s, opacity 0s;
+    }
+  }
+}
+

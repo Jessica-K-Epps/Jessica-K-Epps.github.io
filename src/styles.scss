@@ -1,6 +1,6 @@
 @import "@fortawesome/fontawesome-free/css/all.css";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
-
+// @import "primeicons/primeicons.css";
 
 //** COLORS
 
@@ -121,4 +121,8 @@ i:hover {
 
 button:active {
   transform: scale(0.95);
+}
+
+.highlight-number {
+  color: #d59ba7;
 }

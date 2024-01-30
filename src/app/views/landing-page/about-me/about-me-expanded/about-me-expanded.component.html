@@ -32,17 +32,24 @@
   side working as a self-taught graphic designer for an orchestra.
 </p>
 
-<!-- <button (click)="navigateToLandingPage()">Back</button> -->
-<!-- <button
-  pButton
-  type="button"
-  label="Back"
-  (click)="navigateToLandingPage()"
-></button> -->
-<button
-  pButton
-  type="button"
-  label="Back"
-  (click)="navigateToLandingPage()"
-></button>
-<!-- <p-button label="Back" (click)="navigateToLandingPage()"></p-button> -->
+<div class="about-me-action-buttons-container">
+  <i
+    class="fa-solid fa-angles-left about-me-action-button"
+    (click)="navigateToLandingPage()"
+    (mousedown)="onMouseDown($event)"
+    (mouseup)="onMouseUp($event)"
+    pTooltip="Download Resume"
+    tooltipEvent="hover"
+    tooltipPosition="top"
+  ></i>
+
+  <i
+    class="fa-solid fa-file-arrow-down about-me-action-button"
+    (click)="downloadResume()"
+    (mousedown)="onMouseDown($event)"
+    (mouseup)="onMouseUp($event)"
+    pTooltip="Download Resume"
+    tooltipEvent="focus"
+    tooltipPosition="top"
+  ></i>
+</div>

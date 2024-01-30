@@ -1,0 +1,51 @@
+@import "src/styles.scss";
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $jke-primary-color;
+  min-height: 100vh;
+  background: none
+}
+
+h1,
+p {
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+button, p-button {
+  color: #f7f4ec;
+}
+
+.about-me-action-button {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: center;
+  cursor: pointer;
+  transform: scale(2);
+  margin: 2.5rem 4rem;
+  
+  &.active {
+    transform: scale(2.6);
+  }
+
+  i:before {
+    // color: red;
+  }
+}
+
+// .fa-file-arrow-down {
+//   color: #fffaf0;
+//   cursor: pointer;
+
+//   &:hover {
+//     color: #d59ba7; 
+//   }
+// }

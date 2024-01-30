@@ -1,0 +1,50 @@
+<!-- <footer class="footer-container">
+  <div class="footer-row">
+    <div class="footer-label"><span>Email</span></div>
+    <a href="link1-url" class="footer-link">jessicakimepps@gmail.com</a>
+  </div>
+  <div class="footer-row">
+    <div class="footer-label"><span>LinkedIn</span></div>
+    <a href="link2-url" class="footer-link"
+      >https://www.linkedin.com/in/jessicaeppsboyette/</a
+    >
+  </div>
+</footer> -->
+<!-- 
+<footer class="footer-container">
+  <div class="footer-row" *ngFor="let link of links">
+    <div class="footer-label">
+      <span>{{ link.label }}</span>
+    </div>
+    <a href="{{ link.url }}" class="footer-link">{{ link.url }}</a>
+    <button>
+      <i
+        class="pi pi-copy footer-copy"
+        (click)="copyToClipboard(link.url)"
+        (mouseover)="onMouseOver($event)"
+        (mouseout)="onMouseOut($event)"
+        (mousedown)="onMouseDown($event)"
+        (mouseup)="onMouseUp($event)"
+      ></i>
+    </button>
+  </div>
+</footer> -->
+
+<footer class="footer-container">
+  <div class="footer-row">
+    <!-- <div class="footer-title">Connect</div> -->
+    <h2 class="footer-title">connect</h2>
+  </div>
+  <div class="footer-row">
+    <img
+      *ngFor="let link of links"
+      [src]="link.assetPath"
+      (mouseover)="changeIcon($event, link.hoverAssetPath)"
+      (mouseout)="changeIcon($event, link.assetPath)"
+      class="footer-icon"
+      (click)="navigateTo(link.url)"
+      (mousedown)="onMouseDown($event)"
+      (mouseup)="onMouseUp($event)"
+    />
+  </div>
+</footer>
